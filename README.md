@@ -1,7 +1,7 @@
 HomeWork-2
 ==========
 
-Research abstract classes, interface and type hinting.
+Researching abstract classes, interfaces and type hinting.
 
 Owner
 =====
