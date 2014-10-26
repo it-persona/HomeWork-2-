@@ -1,5 +1,4 @@
 <?php
-
 namespace Classes;
 
 abstract class AbstractAnimals

@@ -1,9 +1,5 @@
 <?php
-
 namespace Classes;
-
-use Classes\AbstractAnimals;
-use Classes\AnimalsInterface;
 
 class DoggyClass extends AbstractAnimals implements AnimalsInterface
 {

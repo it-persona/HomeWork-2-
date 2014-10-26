@@ -1,10 +1,5 @@
 <?php
-
 namespace Classes;
-
-use Classes\AbstractAnimals;
-use Classes\AnimalsInterface;
-
 
 class HorseClass extends AbstractAnimals implements AnimalsInterface
 {
