@@ -39,18 +39,11 @@ abstract class AbstractAnimals
 
     public function setAnimalWeight($setWeight)
     {
-	if (!is_int($setWeight)) {
-		echo "<b style='color: red'>" . "Error: Variable $setWeight not integer type." . "</b>";
-	} 
+    if (!is_int($setWeight)) {
+        echo "<b style='color: red'>" . "Error: Variable $setWeight not integer type." . "</b>";
+    }
         $this->weight = $setWeight;
-/*
-        if ($setWeight > 65) {
-            $this->body = "Big";
-        } else {
-            $this->body = "Normal";
-        }
-*/
-	$setWeight  > 65 ? $this->body = "Big" : $this->body = "Normal";
+        $setWeight  > 65 ? $this->body = "Big" : $this->body = "Normal";
         return $setWeight;
     }
 
