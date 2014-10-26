@@ -29,8 +29,8 @@ abstract class AbstractAnimals
     public function setAnimalTail($tailLength)
     {
         if (!is_int($tailLength)) {
-            echo "<b style='color: red'>" . "Error: Variable $tailLength not Integer. Script stopped." . "</b>";
-            return $tailLength;
+            echo "<b style='color: red'>" . "Error: Variable $tailLength not integer type." . "</b>";
+            
         } else {
             $this->tail = $tailLength;
         }
@@ -39,12 +39,18 @@ abstract class AbstractAnimals
 
     public function setAnimalWeight($setWeight)
     {
+	if (!is_int($setWeight)) {
+		echo "<b style='color: red'>" . "Error: Variable $setWeight not integer type." . "</b>";
+	} 
         $this->weight = $setWeight;
+/*
         if ($setWeight > 65) {
             $this->body = "Big";
         } else {
             $this->body = "Normal";
         }
+*/
+	$setWeight  > 65 ? $this->body = "Big" : $this->body = "Normal";
         return $setWeight;
     }
 

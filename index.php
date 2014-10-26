@@ -13,7 +13,7 @@ $animalDog = new DoggyClass();
 $animalDog->setAnimalEyesColor("Red");
 $animalDog->setAnimalSpecies("England dog");
 $tail = $animalDog->setAnimalTail(90);
-$weight = $animalDog->setAnimalWeight(90);
+$weight = $animalDog->setAnimalWeight(80);
 $animalDog->setAnimalWool("Short");
 $animalSay = $animalDog->animalSay("woof-woof!" . "<br>");
 
