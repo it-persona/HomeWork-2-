@@ -1,4 +1,5 @@
 <?php
+
 namespace Classes;
 
 class HorseClass extends AbstractAnimals implements AnimalsInterface
@@ -19,4 +20,4 @@ class HorseClass extends AbstractAnimals implements AnimalsInterface
     {
         return $message = "$this->animal not checked now!";
     }
-} 
+}

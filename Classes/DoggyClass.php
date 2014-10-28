@@ -1,4 +1,5 @@
 <?php
+
 namespace Classes;
 
 class DoggyClass extends AbstractAnimals implements AnimalsInterface

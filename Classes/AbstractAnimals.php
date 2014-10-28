@@ -1,4 +1,5 @@
 <?php
+
 namespace Classes;
 
 abstract class AbstractAnimals
@@ -38,9 +39,9 @@ abstract class AbstractAnimals
 
     public function setAnimalWeight($setWeight)
     {
-    if (!is_int($setWeight)) {
-        echo "<b style='color: red'>" . "Error: Variable $setWeight not integer type." . "</b>";
-    }
+        if (!is_int($setWeight)) {
+            echo "<b style='color: red'>" . "Error: Variable $setWeight not integer type." . "</b>";
+        }
         $this->weight = $setWeight;
         $setWeight  > 65 ? $this->body = "Big" : $this->body = "Normal";
         return $setWeight;
